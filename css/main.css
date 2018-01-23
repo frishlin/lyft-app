@@ -1,0 +1,54 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.fondo-gradiente{
+  align-items: center;
+  background: linear-gradient(#670166, #D00984);
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo-fondo-blanco{
+  position: absolute;
+  top: 190px;
+	left:50%;
+	width:400px;
+	margin-left:-200px;
+	height:300px;
+	padding:8px;
+}
+
+.logo-fondo-rosa{
+  position: absolute;
+  top: 40px;
+	left:50%;
+	width:400px;
+	margin-left:-200px;
+	height:300px;
+	padding:8px;
+}
+
+.rosa-mobile, .blanco-mobile{
+  position: absolute;
+  top: 40px;
+	left:35%;
+	width:400px;
+	margin-left:-200px;
+	height:300px;
+	padding:8px;
+}
+
+.fondo-rosa{
+  background-image: url("../assets/images/fondo1.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+.fondo1{
+  width: 105%;
+  background-position: 0% 20%;
+}
