@@ -1,19 +1,43 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+      </head>
+      <body>
+        <div id="main">
+          <select name="country" id="country">
+            <option value="+52">M&eacute;xico</option>
+            <option value="+57">Colombia</option>
+            <option value="+51">Per&uacute;</option>
+            <option value="+1">Estados Unidos</option>
+          <input type="text" id="telephone" onkeyup="doValidation('tel')" />
+          <input type="submit" id="send" value="Enviar" onclick="generatePIN(true)" />
+        </div>
+        <div id="verify">
+          <p>Verifica tu n&uacute;mero de tel&eacute;fono</p>
+          LAB-<input type="text" id="inputPin" onkeyup="doValidation('pin')" />
+          <div id="phoneNumberMsg"></div>
+          <input type="submit" value="Reenviar c&oacute;digo" onclick="generatePIN(false)" />
+          <input type="submit" value="Siguiente" onclick="signUp()" id="next"/>
+        </div>
+        <div id="signup">
 
-    <div class="content popup font-style fondo-gradiente">
+        </div>
+
+            <script type="text/javascript" src="js/app.js"></script>
+            <!-- <script type="text/javascript" src="js/data.js"></script> -->
+      </body>
+    </html>
+
+    <!-- <div class="content popup font-style fondo-gradiente">
       <div class="">
         <img class="logo-fondo-blanco blanco-mobile col-xs-12 img-responsive" src="assets/images/logo-white.png" alt="">
       </div>
@@ -21,7 +45,7 @@
 
    <div class="container-fluid">
 
-     <!-- Contiene las letras Foodmap -->
+
      <div class="row">
        <div class="col-lg-12 col-xs-12 text-center fondo-rosa font-style">
          <img class="logo-fondo-rosa rosa-mobile img-responsive col-xs-6" src="assets/images/logo-pink.png" alt="">
@@ -29,8 +53,5 @@
      </div>
 
 
-    <!-- div que cierra el contenedor principal -->
-    </div>
-        <script type="text/javascript" src="js/app.js"></script>
-  </body>
-</html>
+
+    </div> -->
